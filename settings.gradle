@@ -1,0 +1,6 @@
+rootProject.name = 'auth-demo'
+include 'resource-service'
+include 'authorization-service'
+include 'relying-party'
+include 'relying-party-nimbus'
+

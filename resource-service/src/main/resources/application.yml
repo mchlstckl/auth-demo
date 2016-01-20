@@ -1,0 +1,2 @@
+server.port: 8280
+logging.level.org.springframework.security.oauth2: DEBUG

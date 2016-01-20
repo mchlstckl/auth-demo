@@ -1,0 +1,3 @@
+server.port: 8380
+logging.level.org.springframework.security.oauth2: DEBUG
+logging.level.com.nimbusds: DEBUG

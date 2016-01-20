@@ -1,0 +1,40 @@
+group 'authdemo'
+version '1.0-SNAPSHOT'
+
+buildscript {
+
+    ext {
+        kotlinVersion = '1.0.0-beta-4584'
+        springBootVersion = '1.3.1.RELEASE'
+    }
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+    }
+}
+
+
+apply plugin: "kotlin" // or apply plugin: "kotlin2js" if targeting JavaScript
+apply plugin: "java"
+apply plugin: "spring-boot"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    compile "org.springframework.boot:spring-boot-starter-web"
+
+    compile "com.nimbusds:nimbus-jose-jwt:4.11.2"
+    compile "com.nimbusds:oauth2-oidc-sdk:5.1.1"
+}
+
+
